@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_poeme
+    - node.type.poeme
+  module:
+    - options
+id: node.poeme.field_type_poeme
+field_name: field_type_poeme
+entity_type: node
+bundle: poeme
+label: 'Type poème'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

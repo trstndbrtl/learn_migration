@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_liens
+    - taxonomy.vocabulary.mouvement_litteraire
+  module:
+    - link
+id: taxonomy_term.mouvement_litteraire.field_liens
+field_name: field_liens
+entity_type: taxonomy_term
+bundle: mouvement_litteraire
+label: Liens
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

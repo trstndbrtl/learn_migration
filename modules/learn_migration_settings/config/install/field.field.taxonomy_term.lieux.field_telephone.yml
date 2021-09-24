@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_telephone
+    - taxonomy.vocabulary.lieux
+  module:
+    - telephone
+id: taxonomy_term.lieux.field_telephone
+field_name: field_telephone
+entity_type: taxonomy_term
+bundle: lieux
+label: Téléphone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

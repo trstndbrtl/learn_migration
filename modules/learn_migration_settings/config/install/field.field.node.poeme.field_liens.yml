@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liens
+    - node.type.poeme
+  module:
+    - link
+id: node.poeme.field_liens
+field_name: field_liens
+entity_type: node
+bundle: poeme
+label: Liens
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,133 @@
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.figures.field_alias_auteur
+    - field.field.taxonomy_term.figures.field_date_de_deces
+    - field.field.taxonomy_term.figures.field_date_de_naissance
+    - field.field.taxonomy_term.figures.field_domaine
+    - field.field.taxonomy_term.figures.field_liens
+    - field.field.taxonomy_term.figures.field_mouvement_litteraire
+    - field.field.taxonomy_term.figures.field_portrait
+    - field.field.taxonomy_term.figures.field_prenom
+    - image.style.thumbnail
+    - taxonomy.vocabulary.figures
+  module:
+    - datetime
+    - image
+    - layout_discovery
+    - link
+    - path
+    - text
+id: taxonomy_term.figures.default
+targetEntityType: taxonomy_term
+bundle: figures
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_alias_auteur:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_date_de_deces:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_naissance:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_domaine:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_liens:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mouvement_litteraire:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_portrait:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_prenom:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 11
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

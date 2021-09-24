@@ -1,0 +1,7 @@
+.toolbar-icon-learn-migration-admin-desktop:before {
+  background-image: url('./dossier_off.png');
+}
+.toolbar-icon-learn-migration-admin-desktop:active:before,
+.toolbar-icon-learn-migration-admin-desktop.is-active:before {
+  background-image: url('./dossier.png');
+}

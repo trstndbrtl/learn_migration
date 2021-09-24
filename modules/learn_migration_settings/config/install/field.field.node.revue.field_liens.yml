@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liens
+    - node.type.revue
+  module:
+    - link
+id: node.revue.field_liens
+field_name: field_liens
+entity_type: node
+bundle: revue
+label: Liens
+description: 'Liens pour référencer des sites externes, des bibliographies, des sources pour les textes ou images utilisés.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,28 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference_livre
+    - node.type.livres
+    - node.type.poeme
+    - node.type.revue
+id: node.revue.field_reference_livre
+field_name: field_reference_livre
+entity_type: node
+bundle: revue
+label: Référence
+description: 'Référencer des livres ou des poèmes.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      livres: livres
+      poeme: poeme
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: livres
+field_type: entity_reference

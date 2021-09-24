@@ -1,0 +1,27 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maison_d_edition
+    - node.type.revue
+    - taxonomy.vocabulary.maison_d_edition
+id: node.revue.field_maison_d_edition
+field_name: field_maison_d_edition
+entity_type: node
+bundle: revue
+label: 'Maison d''édition'
+description: 'Une maison d''édition partenaire.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      maison_d_edition: maison_d_edition
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

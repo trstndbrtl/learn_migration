@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_date_de_deces
+    - taxonomy.vocabulary.figures
+  module:
+    - datetime
+id: taxonomy_term.figures.field_date_de_deces
+field_name: field_date_de_deces
+entity_type: taxonomy_term
+bundle: figures
+label: 'Date de décès'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

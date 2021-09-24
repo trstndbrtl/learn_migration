@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annee_d_edition
+    - node.type.poeme
+  module:
+    - datetime
+id: node.poeme.field_annee_d_edition
+field_name: field_annee_d_edition
+entity_type: node
+bundle: poeme
+label: 'Année d''édition'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

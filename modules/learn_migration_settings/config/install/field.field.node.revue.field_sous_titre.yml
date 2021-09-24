@@ -1,0 +1,17 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sous_titre
+    - node.type.revue
+id: node.revue.field_sous_titre
+field_name: field_sous_titre
+entity_type: node
+bundle: revue
+label: 'Sous titre'
+description: 'Pour styliser l''article l''on peut ajouter un sous-titre.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

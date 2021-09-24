@@ -1,0 +1,27 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.revue
+    - taxonomy.vocabulary.tags
+id: node.revue.field_tags
+field_name: field_tags
+entity_type: node
+bundle: revue
+label: Étiquettes
+description: 'Liste de tags annexe. Ex: Roman, Conversation, Sonore, Littérature Américaine, etc'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

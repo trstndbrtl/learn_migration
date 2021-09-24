@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_date_de_naissance
+    - taxonomy.vocabulary.maison_d_edition
+  module:
+    - datetime
+id: taxonomy_term.maison_d_edition.field_date_de_naissance
+field_name: field_date_de_naissance
+entity_type: taxonomy_term
+bundle: maison_d_edition
+label: 'Date de naissance'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

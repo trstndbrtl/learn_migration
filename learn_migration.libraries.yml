@@ -1,0 +1,5 @@
+migration_icon:
+  version: VERSION
+  css:
+    theme:
+      css/learn-migration.css: {}

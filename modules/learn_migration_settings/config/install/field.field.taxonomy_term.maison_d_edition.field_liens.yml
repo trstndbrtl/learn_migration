@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_liens
+    - taxonomy.vocabulary.maison_d_edition
+  module:
+    - link
+id: taxonomy_term.maison_d_edition.field_liens
+field_name: field_liens
+entity_type: taxonomy_term
+bundle: maison_d_edition
+label: Liens
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

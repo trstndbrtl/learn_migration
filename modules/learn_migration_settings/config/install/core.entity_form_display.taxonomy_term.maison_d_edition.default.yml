@@ -1,0 +1,97 @@
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.maison_d_edition.field_adresse
+    - field.field.taxonomy_term.maison_d_edition.field_date_de_naissance
+    - field.field.taxonomy_term.maison_d_edition.field_liens
+    - field.field.taxonomy_term.maison_d_edition.field_portrait
+    - field.field.taxonomy_term.maison_d_edition.field_telephone
+    - image.style.thumbnail
+    - taxonomy.vocabulary.maison_d_edition
+  module:
+    - datetime
+    - image
+    - layout_discovery
+    - link
+    - path
+    - telephone
+    - text
+id: taxonomy_term.maison_d_edition.default
+targetEntityType: taxonomy_term
+bundle: maison_d_edition
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_adresse:
+    weight: 104
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_date_de_naissance:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_liens:
+    weight: 106
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_portrait:
+    weight: 107
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_telephone:
+    weight: 105
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

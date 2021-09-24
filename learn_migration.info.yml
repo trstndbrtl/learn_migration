@@ -1,0 +1,5 @@
+name: 'Learn migration'
+type: module
+description: 'Learn migration module functions'
+core_version_requirement: ^8.9.1 || ^9
+package: 'MM'

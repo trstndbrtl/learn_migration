@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_revue
+    - node.type.revue
+  module:
+    - options
+id: node.revue.field_type_revue
+field_name: field_type_revue
+entity_type: node
+bundle: revue
+label: Type
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 2
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

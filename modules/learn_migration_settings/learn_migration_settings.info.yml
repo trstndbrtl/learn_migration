@@ -1,0 +1,9 @@
+name: 'Learn migration Settings'
+type: module
+description: 'lot of configuration to run Settings for Migration'
+core_version_requirement: ^8.9.1 || ^9
+package: 'MM'
+dependencies:
+  - allowed_formats
+  - telephone
+  - inline_entity_form

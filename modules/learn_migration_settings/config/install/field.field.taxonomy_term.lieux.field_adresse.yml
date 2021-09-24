@@ -1,0 +1,17 @@
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_adresse
+    - taxonomy.vocabulary.lieux
+id: taxonomy_term.lieux.field_adresse
+field_name: field_adresse
+entity_type: taxonomy_term
+bundle: lieux
+label: Adresse
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liens
+    - node.type.livres
+  module:
+    - link
+id: node.livres.field_liens
+field_name: field_liens
+entity_type: node
+bundle: livres
+label: Liens
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

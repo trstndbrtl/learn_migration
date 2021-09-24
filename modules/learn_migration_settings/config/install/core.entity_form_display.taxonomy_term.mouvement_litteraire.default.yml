@@ -1,0 +1,80 @@
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.mouvement_litteraire.field_date_de_deces
+    - field.field.taxonomy_term.mouvement_litteraire.field_date_de_naissance
+    - field.field.taxonomy_term.mouvement_litteraire.field_liens
+    - taxonomy.vocabulary.mouvement_litteraire
+  module:
+    - datetime
+    - layout_discovery
+    - link
+    - path
+    - text
+id: taxonomy_term.mouvement_litteraire.default
+targetEntityType: taxonomy_term
+bundle: mouvement_litteraire
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_date_de_deces:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_naissance:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_liens:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

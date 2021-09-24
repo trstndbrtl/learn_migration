@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_de_page
+    - node.type.livres
+id: node.livres.field_nombre_de_page
+field_name: field_nombre_de_page
+entity_type: node
+bundle: livres
+label: 'Nombre de pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ' pages'
+field_type: integer
