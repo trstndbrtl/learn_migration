@@ -1,0 +1,9 @@
+learn_migration.admin.desktop:
+  path: '/admin/migration/desktop'
+  defaults:
+    _form: '\Drupal\learn_migration\Form\TodoListMigrateForm'
+    _title: 'Migrate Todo List'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

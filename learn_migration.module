@@ -24,6 +24,20 @@ function learn_migration_help($route_name, RouteMatchInterface $route_match) {
 }
 
 /**
+ * Implements hook_theme().
+ */
+function learn_migration_theme() {
+  $theme = [];
+  $theme['readme_learn_migrate_template'] = [
+    'template' => 'readme-learn-migrate-template',
+    'variables' => [
+      'readme' => NULL,
+    ],
+  ];
+  return $theme;
+}
+
+/**
  * Implements hook_preprocess_page().
  */
 function learn_migration_preprocess_page(&$variables) {

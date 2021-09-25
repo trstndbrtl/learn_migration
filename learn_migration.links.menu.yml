@@ -1,0 +1,7 @@
+# Home migrate page
+learn_migration.admin.desktop:
+  title: Migration
+  description: Administration for all Migration.
+  route_name: learn_migration.admin.desktop
+  parent: system.admin
+  weight: -9

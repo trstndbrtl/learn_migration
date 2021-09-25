@@ -1,3 +1,4 @@
+/* form icon toolbar */
 .toolbar-icon-learn-migration-admin-desktop:before {
   background-image: url('./dossier_off.png');
 }
@@ -5,3 +6,13 @@
 .toolbar-icon-learn-migration-admin-desktop.is-active:before {
   background-image: url('./dossier.png');
 }
+/* form readme */
+#block-seven-content .db-hn {
+  font-size: 11px;
+  font-weight: 900;
+  word-break: break-word;
+  line-height: 1;
+  text-transform: uppercase;
+}
+#block-seven-content .db-descrition {line-height: 1;}
+#block-seven-content .db-branch {min-width: 150px;}
