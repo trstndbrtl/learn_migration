@@ -5,3 +5,9 @@ learn_migration.admin.desktop:
   route_name: learn_migration.admin.desktop
   parent: system.admin
   weight: -9
+
+learn_migration.admin.data_settings:
+  title: Migration Settings
+  route_name: learn_migration.admin.data_settings
+  parent: learn_migration.admin.desktop
+  weight: -7

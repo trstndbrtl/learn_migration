@@ -113,6 +113,13 @@ class TodoListMigrateForm extends ConfigFormBase {
         'branch_link' => 'https://github.com/trstndbrtl/learn_migration/tree/001-add-configuration-files',
         
       ],
+      [
+        'id' => '2',
+        'stage' => 'Installation du module learn_migration', 
+        'description' => 'On installe le module learn_migration pour deployer la home page des configurations de migration.',
+        'branch_name' => '002-form-migrate-settings',
+        'branch_link' => 'https://github.com/trstndbrtl/learn_migration/tree/002-form-migrate-settings',
+      ],
     ];
     return $output;
   }
